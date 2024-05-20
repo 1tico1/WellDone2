@@ -33,40 +33,43 @@ Integrantes:
 Usabilidade
 --
 - Colocar Usuario e Senha no Application.Propeties para conexão com Banco Oracle
-- (Para usar metodo delete, usar na ordem Pagamento, Pedido e depois cliente)
+- Site padrão Swegger
   
 #
 --
-Tabela de EndPoints(Localhost:8080/well)
+Tabela de EndPoints(Localhost:8080/index_)
 --
 
-  Cliente:
-  - FindAll (/clientes)
-  - FindById ("/clientes/{id_cliente}")
-  - Put ("/cliente/{id_cliente}")
-  - Post @PostMapping("/salvarC")
-  - Delete ("/cliented/{id_cliente}")
+  Localhost:8080/index_cliente
+  - FindAll (/todos)
+  - FindById ("/{id_cliente}")
+  - Put ("/inserir_cliente/{id_cliente}")
+  - Post ("/atualiza_cliente{id_cliente")
+  - Delete ("/remove_cliente/{id_cliente}")
 
-  Pagamento:
-  - FindAll (/pagamentos)
-  - FindById ("/pagamentos/{id}")
-  - Put ("/pagamento/{id}")
-  - Post ("/salvarPm")
-  - Delete ("/pagamentod/{id_pagamento}")
+  Localhost:8080/index_pagamento
+  - FindAll (/todos)
+  - FindById ("/{pagamento_id}")
+  - Put ("/inserir_pagamento/{pagamento_id}")
+  - Post ("/atualiza_pagamento{pagamento_id")
+  - Delete ("/remove_pagamento/{pagamento_id}")
 
-  Pedido:
-  - FindAll (/pedidos)
-  - FindById ("/pedidos/{id}")
-  - Put ("/pedido/{id}")
-  - Post ("/salvarPd")
-  - Delete("/pedidod/{id_pedidos}")
 
-  Produto:
-  - FindAll (/produtos)
-  - FindById ("/produtos/{id}")
-  - Put ("/produto/{id_produto}")
-  - Post ("/salvarP")
-  - Delete ("/produtod/{id_produto}")
+  Localhost:8080/index_pedido
+  - FindAll (/todos)
+  - FindById ("/{pedido_id}")
+  - Put ("/inserir_pedido/{pedido_id}")
+  - Post ("/atualiza_pedido{pedido_id")
+  - Delete ("/remove_pedido/{pedido_id}")
+
+
+  Localhost:8080/index_produto
+  - FindAll (/todos)
+  - FindById ("/{produto_id}")
+  - Put ("/inserir_produto/{oroduto_id}")
+  - Post ("/atualiza_produto{produto_id")
+  - Delete ("/remove_produto/{produto_id}")
+
 #
 
 --
